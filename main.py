@@ -25,7 +25,7 @@ async def on_message(message):
     if message.content.startswith("%meme"): 
         memeNumber = ['0', '1', '2', '3', '4', '5']
         meme = '0'
-        await message.channel.send(file=discord.File('https://raw.githubusercontent.com/micahlt/sm-bot/master/memes/' + meme + '.jpg'))
-        print('https://raw.githubusercontent.com/micahlt/sm-bot/master/memes/' + meme + '.jpg')
+        await message.channel.send(file=discord.File('/memes/' + meme + '.jpg'))
+        print('/memes/' + meme + '.jpg')
 
 client.run(os.environ['TOKEN'])
