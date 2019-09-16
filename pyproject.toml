@@ -1,8 +1,0 @@
-[tool]
-[tool.poetry]
-name = "root"
-version = "0.0.0"
-
-[tool.poetry.dependencies]
-python = "*"
-"discord.py" = "==1.2.3"
