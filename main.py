@@ -1,3 +1,4 @@
+import os
 import discord
 import random
 
@@ -23,4 +24,4 @@ async def on_message(message):
         await message.channel.send("Commands: info, ver, hello, rec, and more soon!")
         await message.channel.send("Developed by Micah Lindley")
 
-client.run('NjIzMjQ3MTkzOTg1NTE1NTIz.XX_8Wg.FFfm_a17c99ehl7k3SqR4Jr5ymc')
+client.run(os.environ['TOKEN'])
