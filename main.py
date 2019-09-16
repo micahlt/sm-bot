@@ -16,11 +16,11 @@ async def on_message(message):
         await message.channel.send('Hello!  SqueakyMeme is up and running!')
     if message.content.startswith('%ver'):
         await message.channel.send('0.1.1') 
-    if message.content.startswith("%rec"):
+    if message.content.startswith("%addmeme"):
         await message.channel.send("DM micahlt#4835 for your memes to be added to the bot.")
-    if message.content.startswith("%info"):
-        await message.channel.send("All commands start with a dollar sign.")
-        await message.channel.send("Commands: info, ver, hello, rec, and more soon!")
+    if message.content.startswith("%help"):
+        await message.channel.send("All commands start with a percent sign.")
+        await message.channel.send("Commands: meme, help, ver, hello, addmeme, and more soon!")
         await message.channel.send("Developed by Micah Lindley")
     if message.content.startswith("%meme"): 
         memeNumber = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
