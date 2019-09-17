@@ -27,10 +27,10 @@ async def on_message(message):
         i = 0
         while i < 38:
             memeNumber.append(str(i))
-            print(memeNumber)
             i += 1
             
         meme = random.choice(memeNumber)
+        print(meme)
         await message.channel.send(file=discord.File('memes/sm/' + meme + '.jpg'))
         await message.channel.send(file=discord.File('memes/sm/' + meme + '.png'))
 
