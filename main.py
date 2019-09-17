@@ -26,8 +26,8 @@ async def on_message(message):
         memeNumber = []
         i = 0
         while i < 38:
-            memesList.append(str(i))
-            print(memesList)
+            memeNumber.append(str(i))
+            print(memeNumber)
             i += 1
             
         meme = random.choice(memeNumber)
