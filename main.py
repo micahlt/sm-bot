@@ -31,7 +31,8 @@ async def on_message(message):
             
         meme = random.choice(memeNumber)
         print(meme)
-        await message.channel.send(file=discord.File('memes/sm/' + meme + '.jpg'))
         await message.channel.send(file=discord.File('memes/sm/' + meme + '.png'))
+        await message.channel.send(file=discord.File('memes/sm/' + meme + '.jpg'))
+        
 
 client.run(os.environ['TOKEN'])
