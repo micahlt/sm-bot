@@ -23,9 +23,15 @@ async def on_message(message):
         await message.channel.send("Commands: meme, help, ver, hello, addmeme, and more soon!")
         await message.channel.send("Developed by Micah Lindley")
     if message.content.startswith("%meme"): 
-        memeNumber = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+        memeNumber = []
+        i = 0
+        while i < 38:
+            memesList.append(str(i))
+            print(memesList)
+            i += 1
+            
         meme = random.choice(memeNumber)
-        await message.channel.send(file=discord.File('memes/' + meme + '.jpg'))
-        await message.channel.send(file=discord.File('memes/' + meme + '.png'))
+        await message.channel.send(file=discord.File('memes/sm/' + meme + '.jpg'))
+        await message.channel.send(file=discord.File('memes/sm/' + meme + '.png'))
 
 client.run(os.environ['TOKEN'])
